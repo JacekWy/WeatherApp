@@ -1,0 +1,97 @@
+body {
+  border: 4px dotted gray;
+  background-image: url("claud.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+header {
+  text-align: center;
+  height: 100px;
+  color: rgb(4, 106, 196);
+  font-size: 40px;
+}
+h1 {
+  margin: 0;
+}
+nav {
+  margin-top: 15px;
+  text-align: center;
+  height: 50px;
+}
+ul {
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+  height: 200px;
+  display: none;
+  width: 30%;
+  z-index: 2;
+}
+li:hover {
+  cursor: pointer;
+}
+ul li {
+  position: relative;
+  margin: 0 auto;
+  font-size: 20px;
+  border: 1px solid rgb(5, 211, 5);
+  background-color: rgb(0, 132, 255);
+  z-index: 2;
+}
+
+input {
+  width: 30%;
+  height: 50px;
+  font-size: 20px;
+}
+img {
+  width: 60px;
+}
+main {
+  height: auto;
+}
+.container {
+  text-align: center;
+  position: relative;
+}
+.container-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(27, 25, 49);
+  color: aliceblue;
+  text-align: left;
+}
+.container-data {
+  font-size: 30px;
+}
+p {
+  margin: 10px 0;
+}
+.container-days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  margin-top: 50px;
+  padding: 10px;
+}
+.each-block-data {
+  border: 2px solid black;
+  width: 180px;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.479);
+  color: azure;
+}
+.each-block-data:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.842);
+}

@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pogoda AngularJS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="angular.min.js"></script>
+  </head>
+
+  <body data-ng-app="myApp">
+    <main>
+      <header>
+        <h1>Weather App</h1>
+      </header>
+      <div data-ng-controller="weather">
+        <nav>
+          <input
+            type="text"
+            data-ng-model="city"
+            data-ng-change="getCity(city)"
+            placeholder="Wpisz miasto"
+          />
+          <ul class="showLi">
+            <li
+              data-ng-repeat="city in cities | filter:city"
+              data-ng-click="weid(city.woeid)"
+            >
+              {{city.title}}
+            </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="container-overlay"><h2>{{ladowanie}}</h2></div>
+          <div class="container-data">
+            <h2>{{weather.title}}</h2>
+            <img
+              src="https://www.metaweather.com/static/img/weather/{{days[nrDay].weather_state_abbr}}.svg"
+              alt=""
+            />
+            <div>{{days[nrDay].weather_state_name}}</div>
+            <p>Temp today: {{days[nrDay].the_temp | number:1}}˚C</p>
+            <p>Wind speed: {{days[nrDay].wind_speed | number:1}} m/s</p>
+            <p>Air pressure: {{days[nrDay].air_pressure | number:1}} hPa</p>
+            <div>Timezone: {{weather.timezone}}</div>
+
+            <div class="container-days">
+              <div
+                data-ng-repeat="d in days"
+                data-ng-click="$parent.nrDay = $index"
+              >
+                <div class="each-block-data">
+                  <img
+                    src="https://www.metaweather.com/static/img/weather/{{d.weather_state_abbr}}.svg"
+                    alt=""
+                  />
+                  <div class="day-block">
+                    {{weekDay}}
+                  </div>
+                  <div class="weather-state-block">
+                    {{d.weather_state_name}}
+                  </div>
+                  <div class="temp-block">
+                    {{d.the_temp | number:1}}˚C
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>Powered by MetaWeather.com</footer>
+    <script src="myapp.js"></script>
+  </body>
+</html>

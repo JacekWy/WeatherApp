@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Washington DC",
+    "location_type": "City",
+    "woeid": 2514815,
+    "latt_long": "38.899101,-77.028999"
+  },
+  {
+    "title": "Milwaukee",
+    "location_type": "City",
+    "woeid": 2451822,
+    "latt_long": "43.041809,-87.906837"
+  },
+  {
+    "title": "Wakefield",
+    "location_type": "City",
+    "woeid": 38952,
+    "latt_long": "53.677631,-1.509510"
+  },
+  {
+    "title": "Warsaw",
+    "location_type": "City",
+    "woeid": 523920,
+    "latt_long": "52.235352,21.009390"
+  },
+  {
+    "title": "Kawasaki",
+    "location_type": "City",
+    "woeid": 1117502,
+    "latt_long": "35.556332,139.675201"
+  },
+  {
+    "title": "Kirkwall",
+    "location_type": "City",
+    "woeid": 25462,
+    "latt_long": "58.981731,-2.96042"
+  },
+  {
+    "title": "Swansea",
+    "location_type": "City",
+    "woeid": 36758,
+    "latt_long": "51.623150,-3.940930"
+  },
+  {
+    "title": "Newark",
+    "location_type": "City",
+    "woeid": 2459269,
+    "latt_long": "40.731972,-74.174179"
+  }
+]
